@@ -28,7 +28,7 @@ async def process_yes_answer(message: Message):
 
 
 # Этот хэндлер срабатывает на отказ пользователя играть в игру
-@router.message(f.text == LEXICON_RU['no_button'])
+@router.message(F.text == LEXICON_RU['no_button'])
 async def process_no_answer(message: Message):
 	await message.answer(text=LEXICON_RU['no'])
 
