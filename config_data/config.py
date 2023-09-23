@@ -4,7 +4,7 @@ from environs import Env
 
 @dataclass
 class TgBot:
-	token: '6055594961:AAEbkzVKH1Yoepk3FqDiT_0v50gwPOreTgw'
+	token: str
 
 
 @dataclass
